@@ -1,0 +1,24 @@
+@import "bootstrap/functions";
+@import "abstracts/variables";
+@import "base/base";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+@import "bootstrap/grid";
+@import "bootstrap/utilities/display";
+@import "bootstrap/utilities/flex";
+@import "bootstrap/utilities/spacing";
+
+
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+
+@import "components/usercard";
+@import "components/owl.carousel";
+@import "components/carousel";
+@import "components/button";
+@import "pages/home";

@@ -1,0 +1,35 @@
+:root{
+    @each $color, $value in $colors {
+        --color-#{$color}: #{$value};
+    }
+
+    @each $gray, $value in $grays {
+        --color-gray-#{$gray}: #{$value};
+    }
+
+    @each $color, $value in $theme-colors {
+        --color-#{$color}: #{$value};
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Open Sans",sans-serif;
+    font-weight: 400;  
+    color: var(--color-gray-100);  
+    font-size: 1.6rem;
+    line-height: 1.6;
+}

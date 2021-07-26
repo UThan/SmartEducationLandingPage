@@ -1,0 +1,44 @@
+.footer{
+    background-color: $primary;
+    padding: 4rem;
+    
+    &__title{
+        color: var(--color-gray-100);
+        position: relative;
+        display: inline-block;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+
+
+        @include underline(left){
+            height: 2px;
+        }
+    }
+
+    &__list{
+        list-style: none;
+    }    
+
+    &__link{
+        &:link,&:visited{
+            text-decoration: none;
+            color: inherit;
+            font-weight: 300;
+            line-height: 2;
+        }
+
+        &::before{
+            content: "> ";
+        }
+
+        &:hover{
+            color: #ad0000;
+            font-weight: 600;
+
+            &::before{
+                color: #ad0000;
+            }
+        }
+    }
+}

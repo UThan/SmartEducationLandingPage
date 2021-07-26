@@ -1,0 +1,26 @@
+@import "../bootstrap/mixins";
+
+@mixin underline($position) {   
+
+    &::before{
+        content: '';
+        display: block;
+        width: 100%;
+        position: absolute;
+        background-color: #ad2a1f;
+        bottom: 0;
+        transform: scaleX(.6);
+        transition: all .2s;        
+        @if $position == left {
+            transform-origin: left;
+            @content
+        }
+
+        @if $position == center {
+            transform-origin: center;
+            @content
+        }
+       
+    }
+
+}

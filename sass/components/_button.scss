@@ -1,0 +1,61 @@
+.btn{
+    &__text{
+        &:link,&:visited{            
+            text-transform: uppercase;
+            font-size: 2.2rem;            
+            padding-bottom: 5px;
+            border-bottom: 5px solid currentColor;
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+            transition: all .2s;
+        }
+
+        &:hover{
+            color: var(--color-primary);
+        }
+    }
+
+    &__primary{
+        &:link,&:visited{            
+            text-transform: uppercase;
+            font-size: 2rem;            
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            color: var(--color-gray-300);
+            display: inline-block;
+            transition: all .2s;
+            border: 2px solid currentColor;
+            background-color: transparent;
+            font-weight: 600;
+        }
+
+        &:hover{
+            color: var(--color-primary);
+            background-color: var(--color-gray-100);
+        }
+
+        &:active{
+            transform: translateY(2px);
+        }
+    }
+
+    &__link{
+        &:link,&:visited{            
+            text-transform: uppercase;
+            font-size: 1.4rem;  
+            border-bottom: 1px solid currentColor;
+            color: var(--color-primary);
+            display: inline-block;
+            transition: all .2s;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        &:hover{
+            color: #ad2a1f;
+        }
+        
+    }
+}

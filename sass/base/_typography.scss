@@ -1,0 +1,30 @@
+.heading{
+    &__primary{
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 5rem;
+        letter-spacing: .12rem;
+    }
+
+    &__secondary{
+        font-weight: 600;
+        font-size: 3rem;
+        letter-spacing: .16rem;
+        text-transform: uppercase;
+    }
+
+    &__tertiary{
+        font-weight: 600;
+        font-size: 1.8rem;
+        letter-spacing: .16rem;
+        text-transform: uppercase;
+        color: var(--color-gray-200);
+    }    
+}
+
+.paragraph{
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    color: var(--color-gray-400);
+}
