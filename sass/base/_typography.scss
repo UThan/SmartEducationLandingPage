@@ -8,6 +8,10 @@
         @include device(tab-port){
             font-size: 4rem;
         }
+
+        @include device(phone){
+            font-size: 3rem;
+        }
     }
 
     &__secondary{
@@ -15,6 +19,10 @@
         font-size: 3rem;
         letter-spacing: .16rem;
         text-transform: uppercase;
+
+        @include device(phone){
+            font-size: 2rem;
+        }
     }
 
     &__tertiary{

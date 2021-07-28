@@ -1,17 +1,8 @@
 .contact{    
     background-color: var(--color-primary);
     padding: .5rem 0;
-    @include device(phone){
-        padding: .2rem 0;
-    }
 
     &__phone,&__email,&__social{
-        @include device(phone){
-            & > span{
-                display: none;
-            }
-        }
-       
         & > a:link,a:visited {
             font-weight: 300;
             color: var(--color-white);
@@ -20,16 +11,13 @@
     }
 
     &__social a:not(:last-child){
-        @include device(phone){
-            margin-right: .5rem;
-        }
-       
+        margin-right: 2rem;
     }    
 }
 
 .navbar{
     padding: 0 6rem;
-    @include device(tab-land){
+    @include device(tab-port){
         padding: 0 2rem;
     }
     
@@ -111,10 +99,6 @@
         display: flex;
         justify-content: end;     
         align-items: center; 
-        @include device(phone){
-            display: none;
-        }
-    
            
         @include device(tab-port){
             margin-left: auto; 
