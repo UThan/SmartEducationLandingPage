@@ -4,6 +4,10 @@
         font-weight: 300;
         font-size: 5rem;
         letter-spacing: .12rem;
+
+        @include device(tab-port){
+            font-size: 4rem;
+        }
     }
 
     &__secondary{
@@ -24,7 +28,7 @@
 
 .paragraph{
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     letter-spacing: 2px;
     color: var(--color-gray-400);
 }

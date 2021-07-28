@@ -1,4 +1,9 @@
-.contact{
+.header{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact{    
     background-color: var(--color-primary);
     padding: .5rem 0;
 
@@ -15,18 +20,37 @@
     }    
 }
 
-.logo{    
-    &__img{
-        height: 7rem;
-    }
-}
 
-.topnav{
+
+.topnav{    
     display: flex;
     padding: 0 6rem;
     align-items: center;
+
+    @include device(tab-land){
+        padding: 0 3rem 0 0;
+        font-size: 1.3rem;
+
+        &__listitem:not(:last-child){
+            margin-right: 0;
+        }
+      
+    }
+
+    &__logo{
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       &-img{
+           height: 8rem;
+       }
+    }
     
-    &__list{     
+    &__list{   
+        @include device(tab-port){
+           display: none;          
+        }  
         margin-left: auto;
         align-self: stretch;  
         display: flex;
@@ -54,7 +78,7 @@
         }
         
         &:not(:last-child){
-            margin-right: 1rem;
+            margin-right: .5rem;
         }
         
         &:hover{
@@ -67,8 +91,7 @@
         }
     }
 
-    &__link{
-        
+    &__link{        
         &:visited,&:link{
             color: inherit;
             text-decoration: none;            
@@ -79,38 +102,60 @@
     }
 
     &__search{
-        margin-left: 1rem;
         flex: 0 0 15%;   
         display: flex;
         justify-content: end;     
-        align-items: center;
+        align-items: center; 
+           
+        @include device(tab-port){
+            margin-left: auto; 
+            flex: 0 0 40%;
+        }        
 
         &input{
             border: none;
             background-color: var(--color-gray-100);
-            padding: 1rem 2rem;
+            padding: .8rem 2rem;
+            @include device(tab-land){
+                padding: .7rem 1.5rem;
+                width: 90%;
+            }
             border-radius: 100px;
             margin-right: -3.5rem;
             width: 70%;
             margin-left: auto;
             transition: all .2s;
+            border: 2px solid var(--color-gray-500);
+            font-size: 1.6rem;
 
             &:focus{
                 outline: none;
-                border: 1px solid var(--color-gray-400);
+                border: 2px solid var(--color-gray-500);
                 background-color: var(--color-gray-200);
                 width: 100%;
+            }
+
+            &::placeholder{
+                font-family: inherit;
+                font-size: 1.4rem;
+                color: var(--color-gray-500);
+                font-weight: 300;
+                line-height: 1;    
+                @include device(tab-land){
+                    font-size: 1.2rem;
+                }            
             }
         }
 
         &icon{
-            color: var(--color-gray-900);
+            color: var(--color-gray-600);
             line-height: 1;
             transition: all .2s;
 
             &:active{
-                transform: translateY(-3px);
+                transform: translateY(3px);
             }
         }
     }
+    
 }

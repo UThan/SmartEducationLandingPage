@@ -1,5 +1,5 @@
 
-$primary:#154573;
+$primary:#154673;
 $primary-light: #4b70a2;
 $primary-dark: #001f47;
 
@@ -22,6 +22,21 @@ $gray-900: #212121;
 
 $carousel-indicator-hit-area-height : 2rem;
 $spacer : 4rem;
+
+$grid-breakpoints: (
+  xs: 0,          // 0px  
+  sm: 37.5em,     // 600px
+  md: 56.25em,    // 900px
+  lg: 75em,       // 1200px
+  xl: 112.5em     // 1800px
+);
+
+$container-max-widths: (
+  sm: 580px,
+  md: 860px,
+  lg: 1140px,
+  xl: 1700px,
+);
 
 @import "../bootstrap/variables";
 

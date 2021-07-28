@@ -1,6 +1,19 @@
 .footer{
-    background-color: $primary;
-    padding: 4rem;
+    background-color: var(--color-primary); 
+    padding-top: 3rem;    
+    
+    .row{
+        &> *{
+            padding-bottom: 3rem;
+            @include device(tab-port){
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+ 
+    
     
     &__title{
         color: var(--color-gray-100);
@@ -39,6 +52,18 @@
             &::before{
                 color: #ad0000;
             }
+        }
+    }
+
+    &__copyright{
+        font-size: 1.4rem;
+        background-color: #123d64;
+        font-weight: 300;
+        padding: .5rem 0;
+        text-align: center;
+
+        span{
+            font-weight: 400;
         }
     }
 }
