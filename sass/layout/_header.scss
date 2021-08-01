@@ -20,6 +20,7 @@
     }
 
     &__social a:not(:last-child){
+        margin-right: 1rem;
         @include device(phone){
             margin-right: .5rem;
         }
