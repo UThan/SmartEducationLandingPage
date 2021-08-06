@@ -1,0 +1,23 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'base/base';
+@import 'base/animations';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/toggle';
+@import 'components/form';
+@import 'components/owl.carousel';
+@import 'components/usercard';
+@import 'components/carousel';
+@import 'components/button';
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/studentservices';
+@import 'pages/partners';
+@import 'pages/contact';
