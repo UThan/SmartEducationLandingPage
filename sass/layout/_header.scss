@@ -1,170 +1,174 @@
-.contact{    
-    background-color: var(--color-primary);
-    padding: .5rem 0;
-    @include device(phone){
-        padding: .2rem 0;
+.social {
+  background-color: var(--color-primary);
+  padding: 0.5rem 0;
+  @include device(phone) {
+    padding: 0.2rem 0;
+  }
+
+  &__phone,
+  &__email,
+  &__social {
+    @include device(phone) {
+      & > span {
+        display: none;
+      }
     }
 
-    &__phone,&__email,&__social{
-        @include device(phone){
-            & > span{
-                display: none;
-            }
-        }
-       
-        & > a:link,a:visited {
-            font-weight: 300;
-            color: var(--color-white);
-            text-decoration: none;
-        }
+    & > a:link,
+    a:visited {
+      font-weight: 300;
+      color: var(--color-white);
+      text-decoration: none;
     }
+  }
 
-    &__social a:not(:last-child){
-        margin-right: 1rem;
-        @include device(phone){
-            margin-right: .5rem;
-        }
-       
-    }    
+  &__social a:not(:last-child) {
+    margin-right: 1rem;
+    @include device(phone) {
+      margin-right: 0.5rem;
+    }
+  }
 }
 
-.navbar{
-    padding: 0 6rem;
-    @include device(tab-land){
-        padding: 0 2rem;
+.navbar {
+  padding: 0 6rem;
+  @include device(tab-land) {
+    padding: 0 2rem;
+  }
+
+  &__logo {
+    &-img {
+      height: 8rem;
     }
-    
-    &__logo{               
-       &-img{
-           height: 8rem;
-       }
+  }
+
+  &__list {
+    margin-left: auto;
+    list-style: none;
+  }
+
+  &__listitem {
+    padding: 3.5rem 0;
+    @include device(tab-land) {
+      font-size: 1.3rem;
     }
-
-    &__list{                  
-        margin-left: auto;        
-        list-style: none;
+    @include device(tab-port) {
+      font-size: 1.6rem;
+      padding: 1.5rem 0;
+      width: 70%;
+      margin: 0 auto;
     }
+    text-align: center;
+    transition: all 0.2s;
+    position: relative;
+    color: var(--color-gray-600);
 
-    &__listitem{   
-        padding: 3.5rem 0;
-        @include device(tab-land){
-            font-size: 1.3rem;
-        }
-        @include device(tab-port){
-            font-size: 1.6rem;
-            padding: 1.5rem 0;
-            width: 70%;    
-            margin: 0 auto;  
-        }
-        text-align: center;          
-        transition: all .2s;
-        position: relative;
-        color: var(--color-gray-600);        
-
-        &::before{
-            position: absolute;
-            content: '';
-            display: block;            
-            width: 100%;
-            height: 5px;
-            bottom: 0;
-            left: 0;
-            transform: scaleX(0);
-            background-color: var(--color-primary);
-            transition: all .2s;
-        }
-        
-        &:not(:last-child){
-            margin-right: .5rem;      
-            @include device(tab-port){                 
-                margin: 0.5rem auto;  
-            }      
-        }
-        
-        &:hover{
-            color: var(--color-primary);
-            background-color: var(--color-gray-100);
-        }
-
-        &:hover::before{
-            transform: scaleX(1);
-        }
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 5px;
+      bottom: 0;
+      left: 0;
+      transform: scaleX(0);
+      background-color: var(--color-primary);
+      transition: all 0.2s;
     }
 
-    &__link{        
-        &:visited,&:link{
-            color: inherit;
-            text-decoration: none;            
-            text-transform: uppercase;
-            font-weight: 600; 
-            padding: 0 .5rem;            
-        }
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+      @include device(tab-port) {
+        margin: 0.5rem auto;
+      }
     }
 
-    &__menu{
-        @include device(tab-port){
-            order: 2;
-        }
+    &:hover,
+    &-active {
+      color: var(--color-primary);
+      background-color: var(--color-gray-100);
     }
 
-    &__search{
-        flex: 0 0 15%;   
-        display: flex;
-        justify-content: end;     
-        align-items: center; 
-        @include device(phone){
-            display: none;
-        }
-    
-           
-        @include device(tab-port){
-            margin-left: auto; 
-            flex: 0 0 40%;
-        }        
-
-        &input{
-            border: none;
-            background-color: var(--color-gray-100);
-            padding: .8rem 2rem;
-            @include device(tab-land){
-                padding: .7rem 1.5rem;
-                width: 90%;
-            }
-            border-radius: 100px;
-            margin-right: -3.5rem;
-            width: 70%;
-            margin-left: auto;
-            transition: all .2s;
-            border: 2px solid var(--color-gray-500);
-            font-size: 1.6rem;
-
-            &:focus{
-                outline: none;
-                border: 2px solid var(--color-gray-500);
-                background-color: var(--color-gray-200);
-                width: 100%;
-            }
-
-            &::placeholder{
-                font-family: inherit;
-                font-size: 1.4rem;
-                color: var(--color-gray-500);
-                font-weight: 300;
-                line-height: 1;    
-                @include device(tab-land){
-                    font-size: 1.2rem;
-                }            
-            }
-        }
-
-        &icon{
-            color: var(--color-gray-600);
-            line-height: 1;
-            transition: all .2s;
-
-            &:active{
-                transform: translateY(3px);
-            }
-        }
+    &:hover::before,
+    &-active::before {
+      transform: scaleX(1);
     }
+  }
+
+  &__link {
+    &:visited,
+    &:link {
+      color: inherit;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 0 0.5rem;
+    }
+  }
+
+  &__menu {
+    @include device(tab-port) {
+      order: 2;
+    }
+  }
+
+  &__search {
+    flex: 0 0 15%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    @include device(phone) {
+      display: none;
+    }
+
+    @include device(tab-port) {
+      margin-left: auto;
+      flex: 0 0 40%;
+    }
+
+    &input {
+      border: none;
+      background-color: var(--color-gray-100);
+      padding: 0.8rem 2rem;
+      @include device(tab-land) {
+        padding: 0.7rem 1.5rem;
+        width: 90%;
+      }
+      border-radius: 100px;
+      margin-right: -3.5rem;
+      width: 70%;
+      margin-left: auto;
+      transition: all 0.2s;
+      border: 2px solid var(--color-gray-500);
+      font-size: 1.6rem;
+
+      &:focus {
+        outline: none;
+        border: 2px solid var(--color-gray-500);
+        background-color: var(--color-gray-200);
+        width: 100%;
+      }
+
+      &::placeholder {
+        font-family: inherit;
+        font-size: 1.4rem;
+        color: var(--color-gray-500);
+        font-weight: 300;
+        line-height: 1;
+        @include device(tab-land) {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    &icon {
+      color: var(--color-gray-600);
+      line-height: 1;
+      transition: all 0.2s;
+
+      &:active {
+        transform: translateY(3px);
+      }
+    }
+  }
 }
