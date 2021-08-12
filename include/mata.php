@@ -24,5 +24,5 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/fontawsome.min.css" />
+    <link rel="stylesheet" href="/css/fontawsome.min.css" /> 
     <title>Smart Education</title>
