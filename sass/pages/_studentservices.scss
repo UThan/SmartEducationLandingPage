@@ -5,7 +5,7 @@
 
 .service {
   &__list {
-    color: $gray-600;
+    color: $gray-800;
     column-count: 2;
     column-gap: 2rem;
     margin: 0 auto;
@@ -26,6 +26,7 @@
     > li {
       > span {
         color: $primary;
+        margin-right: 0.5rem;
       }
       padding: 0.7rem 1.2rem;
       border: 1px solid $gray-400;

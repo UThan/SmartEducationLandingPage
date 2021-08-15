@@ -10112,6 +10112,9 @@ body {
   background-color: var(--color-primary);
   padding-top: 3rem;
 }
+.footer .container-fluid, .footer .container-sm, .footer .container-md, .footer .container-lg, .footer .container-xl {
+  padding: 0 5rem;
+}
 .footer .row > * {
   padding-bottom: 3rem;
 }
@@ -10978,11 +10981,16 @@ body {
   background-color: #f8f8f8;
 }
 .about .paragraph {
-  color: #333;
+  color: #343434;
 }
 .about .paragraph:not(:last-child) {
   margin-bottom: 3rem;
   letter-spacing: 1.2;
+}
+.about .heading__h4 {
+  color: #343434;
+  font-weight: 600;
+  font-size: 2rem;
 }
 
 .studentservices {
@@ -10991,7 +10999,7 @@ body {
 }
 
 .service__list {
-  color: #6c6c6c;
+  color: #343434;
   column-count: 2;
   column-gap: 2rem;
   margin: 0 auto;
@@ -11021,6 +11029,7 @@ body {
 }
 .service__list > li > span {
   color: #154673;
+  margin-right: 0.5rem;
 }
 .service__list > li::before {
   content: "";
@@ -11028,60 +11037,86 @@ body {
 }
 
 .contact {
-  padding: 8rem 0;
-  font-size: 1.6rem;
+  margin: 8rem auto;
 }
-.contact__body {
-  padding: 4rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-  background-color: #154673;
+.contact > div {
   border-radius: 0.5rem;
-  grid-gap: 2rem;
-}
-.contact__address-box {
-  grid-area: 1/1/2/3;
-  background-color: #f8f8f8;
-  display: grid;
-  grid-template-columns: repeat(2, 3fr) 1fr;
-  color: #6c6c6c;
-  grid-row-gap: 1rem;
-  grid-column-gap: 2rem;
+  border: 1px solid #cecece;
   padding: 2rem;
+  color: #343434;
+  margin-bottom: 2rem;
 }
 .contact__address {
-  grid-area: 2/1/4/2;
-  align-self: center;
-}
-.contact__phone {
-  grid-area: 2/2/3/3;
-}
-.contact__email {
-  grid-area: 3/2/4/3;
-}
-.contact__pin {
-  grid-area: 1/3/4/4;
-  color: green;
-  font-size: 6rem;
-}
-.contact__title {
-  font-weight: 700;
-  font-size: 2.5rem;
-  grid-area: 1/1/2/4;
-}
-.contact__location {
-  grid-column: 2/3;
   background-color: #f8f8f8;
 }
-.contact__location > iframe {
-  width: 100%;
-  height: 45rem;
+.contact__address h3 {
+  color: #343434;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.contact__address p {
+  line-height: 1.2;
+}
+.contact__address p i {
+  margin: 0 1rem;
+  color: #154673;
+}
+.contact__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #154673;
 }
 .contact__form {
-  color: #6c6c6c;
-  grid-column: 1/2;
-  background-color: #f8f8f8;
-  padding: 2rem;
+  color: #f8f8f8;
+  flex: 0 0 50%;
+  padding-right: 4rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .contact__form {
+    flex: 0 0 100%;
+    margin-bottom: 2rem;
+    padding-right: 2rem;
+  }
+}
+.contact__form h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.contact__form p {
+  margin-left: 1rem;
+}
+.contact__form form {
+  margin-left: 1rem;
+}
+.contact__form form input,
+.contact__form form textarea {
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.7rem 1rem;
+}
+.contact__form form input::placeholder {
+  color: #154673;
+}
+.contact__form form a {
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+}
+.contact__map {
+  flex: 0 0 50%;
+}
+@media only screen and (max-width: 56.25em) {
+  .contact__map {
+    flex: 0 0 100%;
+    padding: 2rem;
+    height: 50rem;
+  }
+}
+.contact__map iframe {
+  width: 100%;
+  height: 100%;
 }
 
 :root {

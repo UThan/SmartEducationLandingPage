@@ -1,6 +1,6 @@
 <!-- ////////////////// Start Footer Section ////////////////// -->
 <footer class="footer">
-      <div class="container-md">
+      <div class="container-fluid">
         <div class="row">
           <div class="footer__contact col-md-6 col-lg-4">
             <h4 class="footer__title">About Us</h4>
@@ -46,3 +46,11 @@
       <h6 class="footer__copyright">©2020 <span>Smart Education</span>. All Right Reserved.</h6>
     </footer>
     <!-- ////////////////// End Footer Section ////////////////// -->
+
+    <button class="btn__top"><i class="fas fa-chevron-up"></i></button> 
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/index.js"></script>

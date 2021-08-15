@@ -121,7 +121,7 @@
       <!-- ////////////////// Start Contact Us Section ////////////////// -->
       <section class="contactus">
         <div class="container">
-          <h1 class="heading__h1">Talk to the <span>education service & visa consultants</span> now.</h1>
+          <h1 class="heading__h1">Talk to the <span>education service & visa consultants</span> now</h1>
           <a href="#" class="btn__primary">Contact Us &rarr;</a>
         </div>
       </section>
@@ -145,7 +145,7 @@
         </div>
 
         <div class="partners__button">
-          <a href="#" class="btn__link">browse more than 50 education partners &rarr;</a>
+          <a href="#" class="btn__link">browse more  &rarr;</a>
         </div>
       </section>
       <!-- ////////////////// End Partner Section ////////////////// -->
@@ -157,10 +157,5 @@
 
     <button class="btn__top"><i class="fas fa-chevron-up"></i></button>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/index.js"></script>
   </body>
 </html>

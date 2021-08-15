@@ -22,80 +22,92 @@
       <!-- ////////////////// End Contact Section ////////////////// -->
 
       <!-- ////////////////// Start Address Section ////////////////// -->
-      <section class="contact">
-        <div class="container">
+      <section class="contact container">
+        
           <h2 class="heading__h2 heading__h2--title">Contact Us</h2>
-          <div class="contact__body">
-            <div class="contact__address-box">
-              <h3 class="contact__title">Location</h3>
-              <div class="contact__address">
-                <span>7/128 Mitchell Street, Larrakeyah NT Australia 0820</span>
-              </div>
-              <div class="contact__phone">
-                <span><i class="fas fa-phone-alt"></i> (+61) 4 05 123 456</span>
-              </div>
-              <div class="contact__email">
-                <span><i class="fas fa-envelope"></i></i> smarteducation@gmail.com.mm</span>
-              </div>
-
-              <div class="contact__pin">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
+          
+            <div class="contact__address">
+              <h3>Location</h3>              
+                      
+              <p> <i class="fas fa-phone-alt"></i>&nbsp;<a href="tel:+61 451 924 288" class="mail-link">+61 451 924 288</a>
+              </p>
+              <p><i class="fas fa-envelope"></i>&nbsp;<a href="mailto:info@smartedumm.com" class="mail-link">info@smartedumm.com</a>                
+              </p>  
+              <p><i class="fas fa-map-marker-alt"></i>&nbsp;7/128 Mitchell Street, Larrakeyah NT Australia 0820</p>            
             </div>
 
-            <div class="contact__form">              
-                  <h1 class="mb-1">Get In Touch</h1>
-                  <p class="mb-1">Got a question? We would love to hear from you and we’ll respond as soon as possible.</p>
-                  <form id="myForm">
-                    <div class="form-group">
-                      <input type="text" class="form-control" id="name" placeholder="Name" />
-                    </div>
-                    <div class="form-group">
-                      <input type="email" class="form-control" id="email" placeholder="Email Address" />
-                    </div>
-                    <div class="form-group">
-                      <div class="form-group">
-                        <div class="row">
-                          <div class="col-6">
-                            <input type="text" class="form-control" id="phone" placeholder="Phone Number" />
-                          </div>
-                          <div class="col-6">
-                            <input type="text" class="form-control" id="address" placeholder="City" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <textarea class="form-control" id="body" rows="3"></textarea>
-                    </div>
-                    <a href="#" onclick="sendEmail()" class="btn btn-danger">Send a Message</a>
-                  </form>                
-            </div>
+            <div class="contact__info">
+              <div class="contact__form">              
+                    <h3>Get In Touch</h3>
+                    <p class="mb-5">Got a question?</br>We would love to hear from you and we’ll respond as soon as possible.</p>
+                    <form id="myForm" >                      
+                        <input type="text" class="form-control" id="name" placeholder="Name" required />  
+                        <input type="email" class="form-control" id="email" placeholder="Email Address" required />
+                      
+                                          
+                          <div class="row">
+                            <div class="col-6">
+                              <input type="tel" class="form-control" id="phone" placeholder="Phone Number" required />
+                            </div>
+                            <div class="col-6">
+                              <input type="text" class="form-control" id="address" placeholder="City" required/>
+                            </div>
+                          </div>                      
+                                            
+                        <textarea class="form-control" id="body" rows="5" required></textarea>
+                      
+                      <button href="#" onclick="sendEmail()" class="btn btn-danger">Send a Message</button>
+                    </form>                
+              </div>
 
-            <div class="contact__location">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3895.9108458069004!2d130.8308249283299!3d-12.455657993951762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2cc0919f35fa407b%3A0x9b08fff8c7c67fe!2s7%2F128%20Mitchell%20St%2C%20Larrakeyah%20NT%200820!5e0!3m2!1sen!2sau!4v1626588796187!5m2!1sen!2sau"
-                style="display: block"
-                allowfullscreen=""
-                loading="lazy"
-              ></iframe>
+              <div class="contact__map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3895.9108458069004!2d130.8308249283299!3d-12.455657993951762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2cc0919f35fa407b%3A0x9b08fff8c7c67fe!2s7%2F128%20Mitchell%20St%2C%20Larrakeyah%20NT%200820!5e0!3m2!1sen!2sau!4v1626588796187!5m2!1sen!2sau"
+                  style="display: block"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
             </div>
-          </div>
-        </div>
+        
       </section>
       <!-- ////////////////// End Address Section ////////////////// -->
     </main>
 
     <?php
-      include('include/footer.php');
+      include('../include/footer.php');
     ?>
 
-    <button class="btn__top"><i class="fas fa-chevron-up"></i></button>
+    <script>
+      function sendEmail() {
+            var name = $("#name").val();
+            var email = $("#email").val();            
+            var body = $("#body").val();
+            var phone = $("#phone").val();
+            var address = $("#address").val();
+            var subject = `Message from ${name} ,(${email})`;
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="../js/owl.carousel.min.js"></script>
-    <script src="../js/index.js"></script>
+            $.ajax({
+                url: 'sendEmail.php',
+                method: 'POST',
+                dataType: 'json',
+                data: {
+                    name: name,
+                    email: email,
+                    subject: subject,
+                    body: body,
+                    phone: phone,
+                    address: address,
+                },
+                complete: function (response) {
+                    $('#myForm')[0].reset();
+                    console.log('success');
+                }
+            });
+        }
+    </script>
+
+    
+    
   </body>
 </html>
