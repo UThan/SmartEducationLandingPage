@@ -8,7 +8,7 @@
       padding-bottom: 5px;
       border-bottom: 5px solid currentColor;
       text-decoration: none;
-      color: inherit;
+      color: var(--color-gray-100);
       display: inline-block;
       transition: all 0.2s;
     }
@@ -78,6 +78,10 @@
     &:hover {
       transform: translateY(-2px);
       box-shadow: 0 1rem 1.5rem rgba($black, 0.4);
+    }
+
+    &:focus {
+      outline: none;
     }
   }
 }

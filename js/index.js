@@ -1,10 +1,9 @@
 window.onscroll = function () {
   scrollFunction();
 };
-var mybutton = document.getElementsByClassName('btn__top');
 
 function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (window.scrollY > document.documentElement.clientHeight) {
     $('.btn__top').show();
   } else {
     $('.btn__top').hide();
@@ -12,8 +11,11 @@ function scrollFunction() {
 }
 
 $('.btn__top').on('click', () => {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  window.scrollTo({
+    left: 0,
+    top: 0,
+    behavior: 'smooth',
+  });
 });
 
 $('.owl-carousel').owlCarousel({
@@ -23,10 +25,10 @@ $('.owl-carousel').owlCarousel({
     0: {
       items: 1,
     },
-    600: {
+    400: {
       items: 1,
     },
-    700: {
+    600: {
       items: 2,
     },
     1200: {
@@ -35,5 +37,18 @@ $('.owl-carousel').owlCarousel({
     1600: {
       items: 4,
     },
+  },
+});
+
+const Toast = Swal.mixin({
+  toast: true,
+  position: 'top-end',
+  showConfirmButton: false,
+  timer: 3000,
+  width: '25rem',
+  timerProgressBar: true,
+  didOpen: (toast) => {
+    toast.addEventListener('mouseenter', Swal.stopTimer);
+    toast.addEventListener('mouseleave', Swal.resumeTimer);
   },
 });

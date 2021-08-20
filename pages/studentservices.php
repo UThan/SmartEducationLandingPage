@@ -16,7 +16,7 @@
       <section class="contactus">
         <div class="container">
           <h1 class="heading__h1">Student service</h1>
-          <h2 class="heading__h2 heading__h2-light">Don't hestitate to contact us. We are here to help 24/7</h2>
+          <h2 class="heading__h2">Don't hestitate to contact us. We are here to help 24/7</h2>
         </div>
       </section>
       <!-- ////////////////// End Contact Us Section ////////////////// -->
@@ -24,7 +24,7 @@
       <!-- ////////////////// About Section ////////////////// -->
       <section class="studentservices">
         <div class="container-lg">
-          <h2 class="heading__h2 heading__h2--title">Our Services</h2>
+          <h2 class="subheading subheading--left">Our Services</h2>
           <ul class="service__list">
             <li>
               <span><i class="fas fa-hand-point-right"></i></span> Course and Career Counselling Service

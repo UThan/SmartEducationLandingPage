@@ -16,7 +16,7 @@
       <section class="contactus">
         <div class="container">
           <h1 class="heading__h1">About us</h1>
-          <h2 class="heading__h2 heading__h2-light">Smart education for your smarter future</h2>
+          <h2 class="heading__h2">Smart education for your smarter future</h2>
         </div>
       </section>
       <!-- ////////////////// End Contact Us Section ////////////////// -->
@@ -24,7 +24,7 @@
       <!-- ////////////////// About Section ////////////////// -->
       <section class="about">
         <div class="container-lg">
-          <h2 class="heading__h2 heading__h2--title">About Us</h2>
+          <h2 class="subheading subheading--left">About Us</h2>
           <p class="paragraph">
             SMART Education is a start-up education and migration consultancy, visa services company which is established in 2020. We have been successfully engaged with many students from Myanmar and other international students.
           </p>

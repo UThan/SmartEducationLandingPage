@@ -25,14 +25,6 @@
   background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
   padding: 6rem 0;
 
-  &__title {
-    letter-spacing: 0rem;
-    position: relative;
-    padding-bottom: 0.5rem;
-    margin-bottom: 3rem;
-    text-align: center;
-  }
-
   &__profile {
     align-self: center;
     &-photo {
@@ -47,7 +39,7 @@
           margin-bottom: 3rem;
         }
 
-        width: 35rem;
+        width: 30rem;
         margin: auto;
         display: block;
         border-radius: 0.3rem;
@@ -56,6 +48,7 @@
   }
 
   &__about {
+    max-width: 80rem;
     @include device(tab-port) {
       text-align: center;
     }
@@ -64,20 +57,6 @@
 
 .feedback {
   padding: 6rem 0;
-
-  &__title {
-    color: var(--color-primary);
-    letter-spacing: 0rem;
-    position: relative;
-    display: inline-block;
-    padding-bottom: 1rem;
-    text-transform: uppercase;
-    font-weight: 600;
-
-    @include underline(left) {
-      height: 5px;
-    }
-  }
 }
 
 .contactus {
@@ -127,18 +106,6 @@
   align-items: center;
   max-width: 114rem;
   margin: auto;
-
-  &__title {
-    color: $primary;
-    position: relative;
-    margin-bottom: 5rem;
-    padding-bottom: 1rem;
-    font-weight: 600;
-
-    @include underline(center) {
-      height: 5px;
-    }
-  }
 
   &__logo {
     align-self: stretch;

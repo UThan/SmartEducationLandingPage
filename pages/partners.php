@@ -16,14 +16,14 @@
       <section class="contactus">
         <div class="container">
           <h1 class="heading__h1">Student service</h1>
-          <h2 class="heading__h2 heading__h2-light">Don't hestitate to contact us. We are here to help 24/7</h2>
+          <h2 class="heading__h2">Don't hestitate to contact us. We are here to help 24/7</h2>
         </div>
       </section>
       <!-- ////////////////// End Contact Us Section ////////////////// -->
 
       <!-- ////////////////// Start Partners Section ////////////////// -->
       <section class="partners">
-        <h2 class="heading__h2 partners__title">Our partners</h2>
+        <h2 class="subheading subheading--center">Our partners</h2>
         <div class="partners__logo">
           <div class="col-md">
             <img src="/img/logo_unsw.jpg" alt="unsw logo" class="partners__logoimg" />

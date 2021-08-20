@@ -13,7 +13,7 @@
     
     <div class="pointtest">
         <div class="box">
-        <h1>Point Test</h1>
+        <h1 class='title'>Point Test</h1>
         <p>
             This Points Test calculator can give you an idea of your points score for a skilled visa. Please note, you will need to confirm your points score with one of our specialists as different criteria applies for each option. 65 points
             may not be sufficient for your specific situation.
