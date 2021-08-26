@@ -9,10 +9,6 @@
 
 <body>
 
-  <?php
-  include('../include/header.php');
-  ?>
-
   <div class="container">
     <div class="form">
       <h2 class="title">Student Information Request Form</h2>
@@ -37,9 +33,11 @@
             <label for="courses">Courses</label>
             <select class="form-control" id="courses" name="courses" required>
               <option value="" disabled selected>Select courses</option>
-              <option value="it">IT</option>
-              <option value="business">Business</option>
-              <option value="accounting">Accounting</option>
+              <option value="none">None</option>
+              <option value="IT">IT</option>
+              <option value="Business">Business</option>
+              <option value="Project Management">Project Management</option>
+              <option value="Leadership Management">Leadership Management</option>
             </select>
           </div>
         </div>
@@ -50,10 +48,10 @@
             <label for="institute">Institute</label>
             <select class="form-control" id="institute" name="institute" required>
               <option value="" disabled selected>Choose institute</option>
+              <option value="None">None</option>
               <option value="ACBI">ACBI</option>
               <option value="ATMC">ATMC</option>
-              <option value="Strathfield">Strathfield</option>
-              <option value="College">Collage</option>
+              <option value="Strathfield">Strathfield Collage</option>
               <option value="AA Poly">AA Poly</option>
             </select>
           </div>
@@ -61,6 +59,7 @@
             <label for="city">Targeted city</label>
             <select class="form-control" id="city" name="targeted_city" required>
               <option value="" disabled selected>Targeted city</option>
+              <option value="None">None</option>
               <option value="Melbourne">Melbourne</option>
               <option value="Sydney">Sydney</option>
               <option value="Perth">Perth</option>
@@ -73,6 +72,7 @@
             <label for="visa_status">Visa Status</label>
             <select class="form-control" id="visa_status" name="visa_status" required>
               <option value="" disabled selected>Visa status</option>
+              <option value="not started">Not started</option>
               <option value="process start">Process Start</option>
               <option value="pending">Pending</option>
               <option value="completed">Completed</option>
@@ -83,6 +83,7 @@
             <label for="app_status">Application Status</label>
             <select class="form-control" id="app_status" name="app_status" required>
               <option value="" disabled selected>Application status</option>
+              <option value="not started">Not started</option>
               <option value="process start">Process Start</option>
               <option value="pending">Pending</option>
               <option value="completed">Completed</option>
@@ -196,13 +197,12 @@
 
         <div class="form-row">
           <button type="submit" class="btn btn-danger">Submit</button>
-          <a class="btn btn-secondary" id="btn-reset">Reset</a>
+          <a href='' class="btn btn-secondary" id="btn-reset">Reset</a>
+          <a href='../pages/studentlist.php' class="btn btn-success">Go to List</a>
         </div>
       </form>
     </div>
   </div>
-
-
 
   <?php
   include('../include/footer.php');

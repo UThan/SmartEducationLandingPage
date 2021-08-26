@@ -12740,4 +12740,45 @@ form .form-row a {
   color: #f8f8f8;
   margin-bottom: 0;
 }
+
+.student-table {
+  margin: 4rem 2rem;
+}
+
+.student-table .table-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 0rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.student-table .table-heading h3 {
+  font-size: 2rem;
+  color: #343434;
+  margin-bottom: 0;
+}
+
+.student-table .table {
+  width: 100%;
+}
+
+.student-table .table th,
+.student-table .table td {
+  border: 1px solid #e9e9e9;
+}
+
+.student-table .table th {
+  padding: 12px 8px;
+  color: #e9e9e9;
+  background-color: #154673;
+}
+
+.student-table .table td {
+  padding: 5px 8px;
+  background-color: #f8f8f8;
+  border: 1px solid #cecece;
+}
 /*# sourceMappingURL=main.css.map */
