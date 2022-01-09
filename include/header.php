@@ -31,11 +31,11 @@
         </div>
         <div class="collapse navbar-collapse navbar__menu" id="navmenu">
           <ul class="navbar__list navbar-nav">
-            <li class="navbar__listitem"><a href="../index.php" class="navbar__link">home</a></li>
+            <li class="navbar__listitem"><a href="../index.php" class="navbar__link">home</a></li>            
             <li class="navbar__listitem"><a href="/pages/aboutus.php" class="navbar__link">about us</a></li>
+            <li class="navbar__listitem"><a href="/pages/ourteam.php" class="navbar__link">our team</a></li>
             <li class="navbar__listitem"><a href="/pages/studentservices.php" class="navbar__link">student services</a></li>
-            <li class="navbar__listitem"><a href="#" class="navbar__link">migration</a></li>
-            <li class="navbar__listitem"><a href="#" class="navbar__link">blog</a></li>
+            <li class="navbar__listitem"><a href="#" class="navbar__link">migration</a></li>            
             <li class="navbar__listitem"><a href="/pages/partners.php" class="navbar__link">partners</a></li>
             <li class="navbar__listitem"><a href="/pages/contactus.php" class="navbar__link">contact us</a></li>
           </ul>
