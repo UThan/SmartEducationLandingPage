@@ -35,7 +35,7 @@
   padding: 0 6rem;
   @include device(tab-land) {
     padding: 0 2rem;
-  }
+  }  
 
   &__logo {
     &-img {
@@ -55,7 +55,7 @@
     }
     @include device(tab-port) {
       font-size: 1.6rem;
-      padding: 1.5rem 0;
+      padding: 1.2rem 0;
       width: 70%;
       margin: 0 auto;
     }
@@ -78,7 +78,7 @@
     }
 
     &:not(:last-child) {
-      margin-right: 0.5rem;
+      margin-right: 0rem;
       @include device(tab-port) {
         margin: 0.5rem auto;
       }

@@ -11621,68 +11621,6 @@ form .form-row a {
   width: 100%;
 }
 
-/*
- * 	Default theme - Owl Carousel CSS File
- */
-.owl-theme .owl-nav {
-  margin-top: 10px;
-  text-align: center;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.owl-theme .owl-nav [class*='owl-'] {
-  color: #fff;
-  font-size: 14px;
-  margin: 5px;
-  padding: 4px 7px;
-  background: #d6d6d6;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 3px;
-}
-
-.owl-theme .owl-nav [class*='owl-']:hover {
-  background: #154673;
-  color: #fff;
-  text-decoration: none;
-}
-
-.owl-theme .owl-nav .disabled {
-  opacity: 0.5;
-  cursor: default;
-}
-
-.owl-theme .owl-nav.disabled + .owl-dots {
-  margin-top: 10px;
-}
-
-.owl-theme .owl-dots {
-  text-align: center;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.owl-theme .owl-dots .owl-dot {
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  width: 30px;
-  height: 3px;
-  margin: 5px 5px;
-  background: #d6d6d6;
-  display: block;
-  -webkit-backface-visibility: visible;
-  -webkit-transition: opacity 200ms ease;
-  transition: opacity 200ms ease;
-  border-radius: 0px;
-}
-
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: #154673;
-}
-
 .item {
   padding: 1.5rem 3rem;
 }
@@ -11998,7 +11936,7 @@ form .form-row a {
 @media only screen and (max-width: 56.25em) {
   .navbar__listitem {
     font-size: 1.6rem;
-    padding: 1.5rem 0;
+    padding: 1.2rem 0;
     width: 70%;
     margin: 0 auto;
   }
@@ -12020,7 +11958,7 @@ form .form-row a {
 }
 
 .navbar__listitem:not(:last-child) {
-  margin-right: 0.5rem;
+  margin-right: 0rem;
 }
 
 @media only screen and (max-width: 56.25em) {
